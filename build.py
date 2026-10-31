@@ -10,6 +10,7 @@ SOURCES = [
     ("freetv", "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"),
 ]
 OUTPUT = "playlist.m3u"
+GUIDE = "https://raw.githubusercontent.com/ALjasme/klight-iptv/guide/guide.xml.gz"
 # A short list means a source broke; failing keeps yesterday's published file.
 MIN_CHANNELS = {"kw": 5, "ara": 200, "xumo": 200, "freetv": 1000}
 
@@ -125,7 +126,7 @@ def main():
             channels.append(channel)
 
     channels.sort(key=lambda c: (ORDER.index(c["category"]), c["rank"], c["name"].lower()))
-    lines = ["#EXTM3U"]
+    lines = [f'#EXTM3U x-tvg-url="{GUIDE}"']
     for channel in channels:
         lines.append(with_group(channel["info"], channel["category"]))
         lines.extend(channel["options"])

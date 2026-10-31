@@ -1,0 +1,51 @@
+name: Daily guide
+
+on:
+  schedule:
+    - cron: '30 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  # The tested iptv-org/epg commit. It runs with write access, so bump it by hand.
+  EPG_COMMIT: ae9cc64f9497c602ec2f6e17857ae38b3aa1ff05
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Build guide
+        run: |
+          python3 guide_channels.py "$PWD/guide.channels.xml"
+          git init -q epg
+          git -C epg fetch -q --depth 1 https://github.com/iptv-org/epg "$EPG_COMMIT"
+          git -C epg checkout -q FETCH_HEAD
+          npm --prefix epg ci --ignore-scripts --no-audit --no-fund
+          cd epg
+          npm run grab --- --channels="$GITHUB_WORKSPACE/guide.channels.xml" \
+            --output="$GITHUB_WORKSPACE/guide.xml" --gzip="$GITHUB_WORKSPACE/guide.xml.gz" \
+            --days=2 --maxConnections=6 --timeout=20000
+      - name: Publish guide
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          # A thin guide means the sites broke; failing keeps yesterday's published file.
+          test "$(grep -c '<programme' guide.xml)" -ge 1000
+          mkdir out
+          cp guide.xml.gz out/
+          cd out
+          git init -q -b guide
+          git add guide.xml.gz
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -q -m "Update guide $(date -u +%F)"
+          # One commit only, so daily guides never pile up in the history.
+          git push -q --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" guide
