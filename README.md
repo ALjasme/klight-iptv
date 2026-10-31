@@ -4,4 +4,4 @@ Daily merged playlist of publicly listed free channels, grouped by field in Arab
 
 Playlist: `https://raw.githubusercontent.com/ALjasme/klight-iptv/main/playlist.m3u`
 
-Sources: [iptv-org](https://github.com/iptv-org/iptv) (Kuwait, Arabic) and Apsattv (Xumo). This repository only re-groups their public links and hosts no video. It is not meant for paid or encrypted channels.
+Sources: [iptv-org](https://github.com/iptv-org/iptv) (Kuwait, Arabic), Apsattv (Xumo) and [Free-TV](https://github.com/Free-TV/IPTV) (Arab countries). This repository only re-groups their public links and hosts no video. It is not meant for paid or encrypted channels.
