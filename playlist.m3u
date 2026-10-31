@@ -314,6 +314,16 @@ https://dbrb49pjoymg4.cloudfront.net/10001/99991689/hls/playlist.m3u8?ads.xumo_c
 https://dtqutq7lmcchv.cloudfront.net/10001/99991690/hls/playlist.m3u8?ads.xumo_channelId=99991690&ads._fw_ifa_type=[IFA_TYPE]&ads._fw_did=[IFA]&ads.amznappId=[AMZN_APP_ID]&ads.lat=[LAT]&ads.lon=[LON]&ads.os=[OS]&ads.osv=[OS_VERSION]&ads.asnw=&ads.caid=CoxWSB&ads.csid=xumo_[PLATFORM]_CoxWSB_ssai&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=0&ads.genre=[CONTENT_IMDB_GENRE]&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=[content_genre]&ads._fw_content_rating=[content_rating]&ads.xumo_contentId=3452&ads.xumo_contentName=CoxWSB&ads.xumo_providerId=3452&ads.xumo_providerName=CoxWSB&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.channelId=99991690&ads.xumo_platform=[PLATFORM]&ads.site_id=[publica_site_id]&ads.appName=xumo&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
 #EXTINF:-1 tvg-id="XUMO_99991691" tvg-logo="https://image.xumo.com/v1/channels/channel/99991691/300x300.webp?type=color_onBlack" group-title="أخبار",WSOC Charlotte
 https://dbrb49pjoymg4.cloudfront.net/10001/99991691/hls/playlist.m3u8?includeAssetTags=true&ads.xumo_channelId=99991691&ads._fw_ifa_type=[IFA_TYPE]&ads._fw_did=[IFA]&ads.amznappId=[AMZN_APP_ID]&ads.lat=[LAT]&ads.lon=[LON]&ads.os=[OS]&ads.osv=[OS_VERSION]&ads.asnw=&ads.caid=CoxWSOC&ads.csid=xumo_[PLATFORM]_CoxWSOC_ssai&ads._fw_is_lat=[IS_LAT]&ads._fw_us_privacy=[CCPA_Value]&ads._fw_coppa=0&ads.genre=News,N,DN,Weather,Local,LocalNews,News-Local&ads._fw_content_category=[IAB_content_category]&ads._fw_content_language=[content_language]&ads._fw_content_genre=News,N,DN,Weather,Local,LocalNews,News-Local&ads._fw_content_rating=[content_rating]&ads.xumo_contentId=3453&ads.xumo_contentName=CoxWSOC&ads.xumo_providerId=3453&ads.xumo_providerName=CoxWSOC&ads._fw_deviceMake=[device_make]&ads._fw_device_model=[device_model]&ads.channelId=99991691&ads.xumo_platform=[PLATFORM]&ads.site_id=[publica_site_id]&ads.appName=xumo&ads.appVersion=[APP_VERSION]&ads._fw_app_bundle=[app_bundle]&ads._fw_app_store_url=[app_store_url]
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9QWs2ms.png" group-title="أخبار",Kurdistan 24 (1080p)
+https://hlspackager.akamaized.net/live/DB/K24/HLS/K24.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Zo3IWOn.png" group-title="أخبار",Rudaw TV (1080p)
+https://hlspackager.akamaized.net/live/DB/RUDAW/HLS/RUDAW.m3u8
+#EXTINF:-1 tvg-logo="https://dtil.tmsimg.com/assets/s142747_ld_h15_aa.png?lock=720x540" group-title="أخبار",CNN News 18 (1080p)
+https://n18syndication.akamaized.net/bpk-tv/CNN_News18_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/a20DHnj.png" group-title="أخبار",Medi1TV Afrique (1080p)
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://shahid.mbc.net/mediaObject/7cfc0baf-1201-477f-b722-d3099fafe17f?height=230&width=512&croppingPoint=&version=1&type=png" group-title="أخبار",Al Arabiya English (1080p)
+https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="AlIraqiaSport.iq@SD" tvg-logo="https://i.imgur.com/DrrlxTO.png" group-title="رياضة",Al Iraqia Sport (720p)
 https://imn-live.esite-lab.com/hls/iraqia-sports-1.m3u8
 #EXTINF:-1 tvg-id="Arryadia.ma@SD" tvg-logo="https://i.imgur.com/XjzK3gZ.png" group-title="رياضة",Arryadia (720p)
@@ -543,6 +553,22 @@ https://live.kwikmotion.com/smc1live/smc1tv.smil/playlist.m3u8
 https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8
 #EXTINF:-1 tvg-name="Qatar Television The Holy Quran" tvg-logo="https://i.imgur.com/N5RB4sp.png" tvg-id="QatarTelevisionTheHolyQuran.qa" tvg-chno="3" tvg-country="QA" group-title="دينية",Qatar Television The Holy Quran
 https://qatartv.akamaized.net/hls/live/20000612/qtvquran/master1080p.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/pDdUvz7.png" group-title="دينية",Imam Hussein TV 1 (1080p)
+http://fa.imamhossaintv.com/live/ih1.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/emQRHQZ.png" group-title="دينية",Imam Hussein TV 3 (1080p)
+http://en.imamhossaintv.com/live/ih3.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0UYcylY.png" group-title="دينية",Imam Hussein TV 4 (1080p)
+http://ur.imamhossaintv.com/live/ih4.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Oq2Ve7C.png" group-title="دينية",Imam Hussein TV 5 (720p)
+http://live.al-zahratv.com/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/lqhU0PY.png" group-title="دينية",Imam Hussein TV 6 (1080p)
+http://live.imamhossaintv.com/live/ih6.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Dvf61Jp.png" group-title="دينية",Marjaeyat TV English (1080p)
+https://livefa.marjaeyattv.com/mtv_en/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/fCj05f0.png" group-title="دينية",Marjaeyat TV Persian (240p) [Not 24/7]
+https://livefa.marjaeyattv.com/mtv_fa/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/RC5Kw82.png" group-title="دينية",Noursat English (576p)
+https://svs.itworkscdn.net/noursatenglive/noursateng.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AmouYazidTV.dz@SD" tvg-logo="https://i.imgur.com/L8UPGPC.png" group-title="أطفال",Amou Yazid TV (576p)
 http://mkstream.servehttp.com:1940/AmouYazid/ay1/playlist.m3u8
 #EXTINF:-1 tvg-id="AtfalMawahebTV.sa@SD" tvg-logo="https://i.imgur.com/Y2BqP9m.png" group-title="أطفال",Atfal & Mawaheb TV (1080p)
@@ -1435,6 +1461,26 @@ https://hlspackager.akamaized.net/live/DB/ZAGROS_TV/HLS/ZAGROS_TV.m3u8
 https://fl1002.bozztv.com/gf-zarintv/index.m3u8
 #EXTINF:-1 tvg-name="MBC Persia" tvg-logo="https://i.imgur.com/4FXiyjn.png" tvg-id="MBCPersia.ae" tvg-chno="12" tvg-country="AE" group-title="قنوات عامة",MBC Persia
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/4xRkBDRx/Afarin-Baxcha-200.png" group-title="قنوات عامة",Afarin Baxcha (1080p)
+https://5dcabf026b188.streamlock.net/afarinTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/6MnXD7g.png" group-title="قنوات عامة",Afarin TV (720p) [Not 24/7]
+https://65f16f0fdfc51.streamlock.net/afarinTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://gateway.esite-lab.com/file-storage/api/v1/public/uploads/2025/3/8/7a8a2548d8e5850e87066d2e573796189.png" group-title="قنوات عامة",Al Iraqia Kurdish (720p)
+https://imn-live.esite-lab.com/hls/iraqia-kurdish.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/JazFBkW.jpeg" group-title="قنوات عامة",Avar TV (1080p)
+https://avr.host247.net/live/AvarTv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/x4KCQlH.png" group-title="قنوات عامة",FarmodaTV (1080p)
+https://avr.host247.net/live/FarmodaTV/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xPwzad9.png" group-title="قنوات عامة",Kurd Channel
+https://kurdchhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WHeH5i7.png" group-title="قنوات عامة",Mixkurdy (1080p)
+https://avr.host247.net/live/Mix-kurdy/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/qySEibb.png" group-title="قنوات عامة",Payam TV (1080p)
+https://hlspackager.akamaized.net/live/DB/PAYAM_TV/HLS/PAYAM_TV.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/rK0y02d.png" group-title="قنوات عامة",Waar TV (1080p)
+https://hlspackager.akamaized.net/live/DB/WAAR_HD/HLS/WAAR_HD.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/8c/Nourtv_logo.jpg" group-title="قنوات عامة",Nour TV
+https://cdn.bestream.io:19360/elfaro4/elfaro4.m3u8
 #EXTINF:-1 tvg-id="AlMadina.ps@SD" tvg-logo="https://i.imgur.com/NVOeM3P.png" group-title="منوعات",Al Madina (720p)
 https://streaming.zaytonatube.com:8081/AlMadinatv/almadina21/index.m3u8
 #EXTINF:-1 tvg-id="AlQamarTV.ae@SD" tvg-logo="https://i.imgur.com/zkBT0C8.png" group-title="منوعات",Al Qamar TV (1080p)
