@@ -6,6 +6,10 @@ import urllib.request
 SOURCES = [
     ("kw", "https://iptv-org.github.io/iptv/countries/kw.m3u"),
     ("ara", "https://iptv-org.github.io/iptv/languages/ara.m3u"),
+] + [
+    ("country", f"https://iptv-org.github.io/iptv/countries/{country}.m3u")
+    for country in ("sa", "iq", "dz")
+] + [
     ("xumo", "https://www.apsattv.com/xumo.m3u"),
     ("freetv", "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"),
 ] + [
@@ -13,9 +17,11 @@ SOURCES = [
     for country in ("iq", "ae", "lb", "ma", "sa")
 ]
 OUTPUT = "playlist.m3u"
+# Stream addresses that failed from Kuwait. A source that moves a channel to a new address brings it back.
+UNPLAYABLE = "unplayable.txt"
 GUIDE = "https://raw.githubusercontent.com/ALjasme/klight-iptv/guide/guide.xml.gz"
 # A short list means a source broke; failing keeps yesterday's published file.
-MIN_CHANNELS = {"kw": 5, "ara": 200, "xumo": 200, "freetv": 1000, "world": 1}
+MIN_CHANNELS = {"kw": 5, "ara": 200, "country": 1, "xumo": 200, "freetv": 1000, "world": 1}
 
 KUWAIT = "الكويت"
 NEWS = "أخبار"
@@ -26,12 +32,16 @@ MOVIES = "أفلام"
 DRAMA = "مسلسلات ودراما"
 LEARNING = "وثائقيات وتعليم"
 MUSIC = "موسيقى"
+RADIO = "إذاعات"
 ENTERTAINMENT = "ترفيه"
 LIFESTYLE = "طبخ وأسلوب حياة"
 GENERAL = "قنوات عامة"
 OTHER = "منوعات"
-ORDER = [KUWAIT, NEWS, SPORTS, RELIGIOUS, KIDS, MOVIES, DRAMA, LEARNING, MUSIC,
-         ENTERTAINMENT, LIFESTYLE, GENERAL, OTHER]
+ARABIC_ORDER = [KUWAIT, GENERAL, NEWS, SPORTS, RELIGIOUS, KIDS, MOVIES, DRAMA, LEARNING, MUSIC, RADIO,
+                ENTERTAINMENT, LIFESTYLE, OTHER]
+INTERNATIONAL = "عالمي - "
+INTERNATIONAL_ORDER = [NEWS, SPORTS, KIDS, MOVIES, DRAMA, LEARNING, MUSIC, ENTERTAINMENT, LIFESTYLE, OTHER]
+ORDER = ARABIC_ORDER + [INTERNATIONAL + name for name in INTERNATIONAL_ORDER]
 
 # Checked in this order, so a "Kids;Religious" channel lands in Kids.
 IPTV_ORG = [
@@ -88,17 +98,77 @@ CHECKED = {
         "Waar TV": GENERAL,
     },
 }
+# Sources file these under the wrong field, or under none.
+RECATEGORIZED = {
+    "Al Saudiya Alaan": GENERAL,
+    "Jordan Archive": GENERAL,
+    "Sharjah 2": GENERAL,
+    "Sharjah TV": GENERAL,
+    "Sudan TV": GENERAL,
+    "UTV": GENERAL,
+    "Wattan TV": GENERAL,
+    "Yemen Today TV": GENERAL,
+    "Sat 7 Arabic": RELIGIOUS,
+    "Takbeer TV": RELIGIOUS,
+    "MBC Bollywood": MOVIES,
+    "Jordan Drama": DRAMA,
+    "MBC Drama": DRAMA,
+    "MBC+ Drama": DRAMA,
+    "Nile Drama": DRAMA,
+    "Rotana Clip": MUSIC,
+    "Rotana Tarab Jordan City View": MUSIC,
+    "Jordan Tourism": LIFESTYLE,
+    "Master Chefs Academy TV": LIFESTYLE,
+}
+# The best-known channels open each field; the rest follow by source, then by name.
+PINNED = {
+    KUWAIT: ["KTV 1", "KTV 2", "KTV News", "KTV Sport", "KTV Sport Plus", "KTV Arabe", "KTV Ethraa",
+             "KTV Al Qurain", "Marina TV", "Ritmu TV", "Ch4Teen Documentary"],
+    GENERAL: ["MBC 1", "Al Saudiya", "SBC", "Al Rayyan TV", "Qatar Television", "Qatar Television 2", "Oman TV",
+              "Bahrain TV", "Bahrain International", "Sharjah TV", "Ajman TV", "MBC Masr", "MBC Masr 2", "MBC Iraq",
+              "Al Sharqiya", "Al Iraqia", "Jordan TV", "Roya TV", "LBC", "LBC International", "Al Jadeed",
+              "MTV Lebanon", "Al Masriyah", "2M", "Al Maghribia"],
+    NEWS: ["Al Jazeera", "Alarabiya", "Al Hadath", "Sky News Arabia", "Asharq News", "BBC Arabic", "Al Ekhbariya",
+           "Al Jazeera Mubasher", "Al Arabiya Business", "CNBC Arabiya", "France 24 Arabic", "DW Arabic", "RT Arabic",
+           "Al Araby TV", "Al Ghad TV", "TRT Arabi"],
+    SPORTS: ["Oman Sports TV", "Bahrain Sports 1", "Bahrain Sports 2", "Al Iraqia Sport", "Jordan Sport", "Arryadia"],
+    RELIGIOUS: ["Al Quran Al Kareem TV", "Qatar TV The Holy Quran", "Qatar Television The Holy Quran", "Bahrain Quran",
+                "Alquran", "Iqraa Quran", "Iqraa Arabic", "Al Sunnah Al Nabawiyah TV", "Makkah TV", "Al Resalah",
+                "Huda TV", "Holy Quran Radio", "Sharjah Radio Quran"],
+    KIDS: ["Spacetoon Arabic", "MBC 3 USA", "Cartoon Network Arabic", "Koogi TV", "Taha TV", "Atfal & Mawaheb TV"],
+    MOVIES: ["Rotana Cinema KSA", "Rotana Cinema Egypt", "Rotana Classic", "MBC Bollywood", "Aflam", "Thikrayat TV"],
+    DRAMA: ["MBC Drama", "MBC Drama USA", "MBC Masr Drama", "MBC+ Drama", "Rotana Drama", "Bab Al Hara", "Maraya",
+            "Jordan Drama", "Nile Drama"],
+    LEARNING: ["Al Jazeera Documentary", "Asharq Documentary", "Asharq Discovery", "Saudi Thaqafiya TV",
+               "Oman TV Cultural"],
+    MUSIC: ["Rotana Khalijia", "Rotana Music", "Rotana Clip", "Mazzika", "MBC Mood", "Tarab", "Mohammed Abdo",
+            "Abdulmajeed Abdullah", "Rashid AlMajed", "Rabeh Saqer", "Majid Al Mohandis", "Fairuz"],
+    ENTERTAINMENT: ["MBC 4", "MBC 5", "Rotana Comedy", "Hya TV", "Jordan Comedy"],
+}
 
 
 def category(source, group, name):
     if source == "kw":
         return KUWAIT
-    if source in CHECKED:
-        return CHECKED[source][bare_name(name)]
     if source == "xumo":
-        return XUMO.get(group.split(":", 1)[-1].strip().lower(), OTHER)
-    tokens = {t.strip().lower() for t in group.split(";")}
-    return next((name for key, name in IPTV_ORG if key in tokens), OTHER)
+        return INTERNATIONAL + XUMO.get(group.split(":", 1)[-1].strip().lower(), OTHER)
+    bare = bare_name(name)
+    if bare in RECATEGORIZED:
+        return RECATEGORIZED[bare]
+    if source in CHECKED:
+        field = CHECKED[source][bare]
+    else:
+        tokens = {t.strip().lower() for t in group.split(";")}
+        field = next((name for key, name in IPTV_ORG if key in tokens), OTHER)
+    if field != RELIGIOUS and re.search(r"radio|fm\b", bare, re.I):
+        return RADIO
+    return field
+
+
+def pin_rank(channel):
+    pinned = PINNED.get(channel["category"], [])
+    bare = bare_name(channel["name"])
+    return pinned.index(bare) if bare in pinned else len(pinned)
 
 
 def parse(text):
@@ -128,6 +198,10 @@ def bare_name(name):
     return re.sub(r"\s*(\(.*?\)|\[.*?\])", "", name).strip()
 
 
+def clean_name(name):
+    return re.sub(r"\s*(\(\d+[pi]\)|\[.*?\])", "", name).strip()
+
+
 def with_group(info, group):
     if 'group-title="' in info:
         return re.sub(r'group-title="[^"]*"', f'group-title="{group}"', info)
@@ -141,7 +215,9 @@ def fetch(url):
 
 
 def main():
-    seen_urls, seen_ids, channels = set(), set(), []
+    with open(UNPLAYABLE, encoding="utf-8") as unplayable:
+        seen_urls = set(unplayable.read().split())
+    seen_ids, channels = set(), []
     for rank, (source, url) in enumerate(SOURCES):
         parsed = parse(fetch(url))
         if len(parsed) < MIN_CHANNELS[source]:
@@ -159,10 +235,11 @@ def main():
             channel.update(rank=rank, name=name, category=category(source, attribute(channel["info"], "group-title"), name))
             channels.append(channel)
 
-    channels.sort(key=lambda c: (ORDER.index(c["category"]), c["rank"], c["name"].lower()))
+    channels.sort(key=lambda c: (ORDER.index(c["category"]), pin_rank(c), c["rank"], c["name"].lower()))
     lines = [f'#EXTM3U x-tvg-url="{GUIDE}"']
     for channel in channels:
-        lines.append(with_group(channel["info"], channel["category"]))
+        info = channel["info"].rsplit(",", 1)[0]
+        lines.append(with_group(f'{info},{clean_name(channel["name"])}', channel["category"]))
         lines.extend(channel["options"])
         lines.append(channel["url"])
     with open(OUTPUT, "w", encoding="utf-8") as output:
