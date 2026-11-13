@@ -357,6 +357,8 @@ https://imn-live.esite-lab.com/hls/iraqia-sports-1.m3u8
 https://jrtv-live.ercdn.net/jordansporthd/jordansporthd.m3u8
 #EXTINF:-1 tvg-id="Arryadia.ma@SD" tvg-logo="https://i.imgur.com/XjzK3gZ.png" group-title="رياضة",Arryadia
 http://149.100.11.252:8000/play/a065/index.m3u8
+#EXTINF:-1 tvg-id="beINSports1.qa@MENA" tvg-logo="https://i.imgur.com/Vtk2cGI.png" group-title="رياضة",beIN Sports 1
+https://vg162.adcdsd123321.shop/7.m3u8
 #EXTINF:-1 tvg-id="Prime.sy@HD" tvg-logo="https://prime1tv.com/wp-content/uploads/2025/12/7-1.png" group-title="رياضة",Prime (Syria)
 https://cdn.bestream.io/prime/prime.m3u8
 #EXTINF:-1 tvg-id="AlQuranAlKareemTV.sa@SD" tvg-logo="https://aloula.faulio.com/storage/mediagallery/da/6c/fullhd_7eaf7e165c4cad5b3a45eff65d2011e18be5d670.png" group-title="دينية",Al Quran Al Kareem TV
