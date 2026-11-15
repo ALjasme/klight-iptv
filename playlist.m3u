@@ -343,6 +343,8 @@ https://hlspackager.akamaized.net/live/DB/PAYAM_TV/HLS/PAYAM_TV.m3u8
 https://hlspackager.akamaized.net/live/DB/RUDAW/HLS/RUDAW.m3u8
 #EXTINF:-1 tvg-logo="https://dtil.tmsimg.com/assets/s142747_ld_h15_aa.png?lock=720x540" group-title="أخبار",CNN News 18
 https://n18syndication.akamaized.net/bpk-tv/CNN_News18_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/a20DHnj.png" group-title="أخبار",Medi1TV Afrique
+https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-afrique_tm7tu45/playlist.m3u8
 #EXTINF:-1 tvg-id="OmanSportsTV.om@SD" tvg-logo="https://i.imgur.com/1omi7p8.png" group-title="رياضة",Oman Sports TV
 https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="BahrainSports1.bh@SD" tvg-logo="https://i.imgur.com/fBpLsbC.png" group-title="رياضة",Bahrain Sports 1
@@ -535,6 +537,8 @@ http://mkstream.servehttp.com:1940/AmouYazid/ay1/playlist.m3u8
 https://cdn.fast.jwp.services/v1/channel/1_jB6940Ei_TvhvIHDL/manifest.m3u8
 #EXTINF:-1 tvg-id="GodStandsKidsClubTV.pk@Arabic" tvg-logo="https://i.imgur.com/FxDBbpz.jpeg" group-title="أطفال",God Stands Kids Club TV Arabic
 https://online.godstands.tv:5443/WebRTCApp/streams/KidsArabic.m3u8
+#EXTINF:-1 tvg-id="NickelodeonArabia.ae@SD" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="أطفال",Nickelodeon Arabia
+http://85.237.89.159:3342/ar-s/Nickelodeon/index.m3u8
 #EXTINF:-1 tvg-id="Sat7Kids.cy@SD" tvg-logo="https://i.imgur.com/M0ik0i2.png" group-title="أطفال",Sat 7 Kids
 https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="AfarinBaxcha.iq@SD" tvg-logo="https://i.postimg.cc/4xRkBDRx/Afarin-Baxcha-200.png" group-title="أطفال",Afarin Baxcha
