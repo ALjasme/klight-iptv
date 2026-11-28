@@ -79,6 +79,10 @@ http://185.9.2.18/chid_205/index.m3u8
 https://cdn-globecast.akamaized.net/live/eds/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8
 #EXTINF:-1 tvg-id="2MMonde.ma@Plus1" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="قنوات عامة",2M Monde +1
 https://d2qh3gh0k5vp3v.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n6pess5lwbghr/2M_ES.m3u8
+#EXTINF:-1 tvg-id="2MMonde.ma@HD" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="قنوات عامة",2M Monde HD
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/2m_monde/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="316Channel.sa@SD" tvg-logo="https://raw.githubusercontent.com/songwenhui239/Songwenhui239/refs/heads/main/3.16%20Channel.jpeg" group-title="قنوات عامة",3.16 Channel
+https://316hls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AjyalTV.ps@SD" tvg-logo="https://i.imgur.com/i6Y7beR.jpg" group-title="قنوات عامة",Ajyal TV
 http://htvajyal.mada.ps:8888/ajyal/index.m3u8
 #EXTINF:-1 tvg-id="AlIttihadTV.lb@SD" tvg-logo="https://i.imgur.com/QMUjPXx.png" group-title="قنوات عامة",Al Ittihad TV
@@ -113,6 +117,8 @@ https://sw1.tanitweb.net/TunisiaTV/_definst_/watania2/playlist.m3u8?DVR
 https://mn-nl.mncdn.com/elsharq_live/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ERiTV1.er@SD" tvg-logo="https://i.imgur.com/bTR0Huw.png" group-title="قنوات عامة",ERi-TV 1
 https://jmc-live.ercdn.net/eritreatv/eritreatv.m3u8
+#EXTINF:-1 tvg-id="FajerTV1.ps@SD" tvg-logo="https://i.imgur.com/1xERxmB.png" group-title="قنوات عامة",Fajer TV 1
+https://e.siar.us/live/ozfest.m3u8
 #EXTINF:-1 tvg-id="FutureTV.lb@SD" tvg-logo="https://i.imgur.com/OaqEpwe.png" group-title="قنوات عامة",Future TV
 https://live.kwikmotion.com/futurelive/ftv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="HalaLondon.uk@SD" tvg-logo="https://i.imgur.com/bM4VZDH.png" group-title="قنوات عامة",Hala London
@@ -170,8 +176,6 @@ https://alpha.tv.online.tm/hls/ch007.m3u8
 http://185.9.2.18/chid_347/index.m3u8
 #EXTINF:-1 tvg-id="UTV.iq@SD" tvg-logo="https://i.imgur.com/9qFHjnu.png" group-title="قنوات عامة",UTV (Iraq)
 https://utviraqi-live.lg.mncdn.com/utviraqi-live/64c80359/index.m3u8
-#EXTINF:-1 tvg-id="VilayetTV.az@SD" tvg-logo="https://vilayet.tv/wp-content/uploads/elementor/thumbs/logo-q3w2md1u47q39x7d0004wqzz74xdv1glw356ex6ph0.png" group-title="قنوات عامة",Vilayet TV
-https://nl.livekadeh.com/hls2/vilayet.m3u8
 #EXTINF:-1 tvg-id="WasatTV.ly@SD" tvg-logo="https://i.imgur.com/f9pL2NE.png" http-referrer="https://alwasat.ly/" group-title="قنوات عامة",Wasat TV
 #EXTVLCOPT:http-referrer=https://alwasat.ly/
 https://alwasattv.hibridcdn.net/alwasattv/alwasat_abr/playlist.m3u8
@@ -187,7 +191,7 @@ https://video.yementdy.tv/hls/yementoday.m3u8
 https://hlspackager.akamaized.net/live/DB/ZAGROS_TV/HLS/ZAGROS_TV.m3u8
 #EXTINF:-1 tvg-id="ZarinTV.us@SD" tvg-logo="" group-title="قنوات عامة",Zarin TV
 https://fl1002.bozztv.com/gf-zarintv/index.m3u8
-#EXTINF:-1 tvg-id="QudsunaTV.ps@HD" tvg-logo="https://drive.google.com/file/d/1LEl-AhX5HZmP05kfBk4fwSmtJyPjVT3x/view?usp=drive_link" group-title="قنوات عامة",Qudsuna TV
+#EXTINF:-1 tvg-id="QudsunaTV.ps@HD" tvg-logo="https://i.imgur.com/rzRs0ed.png" group-title="قنوات عامة",Qudsuna TV
 https://qudsunatv-live.cdnnew.com/qudsunatv/qudsuna.m3u8
 #EXTINF:-1 tvg-name="MBC Persia" tvg-logo="https://i.imgur.com/4FXiyjn.png" tvg-id="MBCPersia.ae" tvg-chno="12" tvg-country="AE" group-title="قنوات عامة",MBC Persia
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8
@@ -279,7 +283,7 @@ http://alwifaklive.info:1935/live/myStream/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://odysee.com/
 https://cloud.odysee.live/content/f92670235a1ce2bce4cf77671cc4dcc2188baa1d/master.m3u8
 #EXTINF:-1 tvg-id="CGTNArabic.cn@SD" tvg-logo="https://i.imgur.com/AkFFrS7.png" group-title="أخبار",CGTN Arabic
-https://dash3.antik.sk/live/test_cgtn_arb_tizen/playlist.m3u8
+https://arabic-liveali.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel8.iq@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Channel8corp.png/960px-Channel8corp.png" group-title="أخبار",Channel8
 https://live.channel8.com/Channel8-Kurdish/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="DabangaTV.sd@SD" tvg-logo="https://i.imgur.com/BH1N6TA.png" group-title="أخبار",Dabanga TV
@@ -359,8 +363,6 @@ https://imn-live.esite-lab.com/hls/iraqia-sports-1.m3u8
 https://jrtv-live.ercdn.net/jordansporthd/jordansporthd.m3u8
 #EXTINF:-1 tvg-id="Arryadia.ma@SD" tvg-logo="https://i.imgur.com/XjzK3gZ.png" group-title="رياضة",Arryadia
 http://149.100.11.252:8000/play/a065/index.m3u8
-#EXTINF:-1 tvg-id="beINSports1.qa@MENA" tvg-logo="https://i.imgur.com/Vtk2cGI.png" group-title="رياضة",beIN Sports 1
-https://vg162.adcdsd123321.shop/7.m3u8
 #EXTINF:-1 tvg-id="Prime.sy@HD" tvg-logo="https://prime1tv.com/wp-content/uploads/2025/12/7-1.png" group-title="رياضة",Prime (Syria)
 https://cdn.bestream.io/prime/prime.m3u8
 #EXTINF:-1 tvg-id="AlQuranAlKareemTV.sa@SD" tvg-logo="https://aloula.faulio.com/storage/mediagallery/da/6c/fullhd_7eaf7e165c4cad5b3a45eff65d2011e18be5d670.png" group-title="دينية",Al Quran Al Kareem TV
@@ -547,15 +549,13 @@ https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
 https://5dcabf026b188.streamlock.net/afarinTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="AfarinTV.iq@SD" tvg-logo="https://i.imgur.com/6MnXD7g.png" group-title="أطفال",Afarin TV
 https://65f16f0fdfc51.streamlock.net/afarinTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="RotanaCinemaKSA.sa@SD" tvg-logo="https://i.imgur.com/pGgp38I.png" http-referrer="https://rotana.net/" group-title="أفلام",Rotana Cinema KSA
-#EXTVLCOPT:http-referrer=https://rotana.net/
-https://rotana.hibridcdn.net/rotananet/cinema_net-7Y83PP5adWixDF93/playlist.m3u8
+#EXTINF:-1 tvg-id="RotanaCinemaKSA.sa@SD" tvg-logo="https://i.imgur.com/pGgp38I.png" group-title="أفلام",Rotana Cinema KSA
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/rotana_cinema/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="RotanaCinemaEgypt.eg@SD" tvg-logo="https://i.imgur.com/dGlKoLW.png" http-referrer="https://rotana.net/" group-title="أفلام",Rotana Cinema Egypt
 #EXTVLCOPT:http-referrer=https://rotana.net/
 https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8
-#EXTINF:-1 tvg-id="RotanaClassic.sa@SD" tvg-logo="https://i.imgur.com/pMMUvkt.png" http-referrer="https://rotana.net/" group-title="أفلام",Rotana Classic
-#EXTVLCOPT:http-referrer=https://rotana.net/
-https://rotana.hibridcdn.net/rotananet/classical_net-7Y83PP5adWixDF93/playlist.m3u8
+#EXTINF:-1 tvg-id="RotanaClassic.sa@SD" tvg-logo="https://i.imgur.com/pMMUvkt.png" group-title="أفلام",Rotana Classic
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/rotana_classic/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="MBCBollywood.ae@SD" tvg-logo="https://i.imgur.com/TTAGFHG.png" group-title="أفلام",MBC Bollywood
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
 #EXTINF:-1 tvg-id="Aflam.sa@SD" tvg-logo="https://i.imgur.com/cTLj7Yt.png" group-title="أفلام",Aflam
@@ -610,12 +610,10 @@ https://136044159.r.cdnsun.net/storychannel.m3u8
 #EXTINF:-1 tvg-id="RotanaKhalijia.sa@SD" tvg-logo="https://i.imgur.com/6HMluzv.png" http-referrer="https://rotana.net/" group-title="موسيقى",Rotana Khalijia
 #EXTVLCOPT:http-referrer=https://rotana.net/
 https://rotana.hibridcdn.net/rotananet/khaleejiya_net-7Y83PP5adWixDF93/playlist.m3u8
-#EXTINF:-1 tvg-id="RotanaMusic.sa@SD" tvg-logo="https://i.imgur.com/2zFQbQi.png" http-referrer="https://rotana.net/" group-title="موسيقى",Rotana Music
-#EXTVLCOPT:http-referrer=https://rotana.net/
-https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8
-#EXTINF:-1 tvg-id="RotanaClip.sa@SD" tvg-logo="https://i.imgur.com/nhREk0o.png" http-referrer="https://rotana.net/" group-title="موسيقى",Rotana Clip
-#EXTVLCOPT:http-referrer=https://rotana.net/
-https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8
+#EXTINF:-1 tvg-id="RotanaMusic.sa@SD" tvg-logo="https://i.imgur.com/2zFQbQi.png" group-title="موسيقى",Rotana Music
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/rotana_music/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="RotanaClip.sa@SD" tvg-logo="https://i.imgur.com/nhREk0o.png" group-title="موسيقى",Rotana Clip
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/rotana_clip/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="Mazzika.eg@SD" tvg-logo="https://i.imgur.com/P7PUHIx.png" group-title="موسيقى",Mazzika
 http://149.100.11.235:8080/Mazzika/index.m3u8
 #EXTINF:-1 tvg-id="MBCMood.sa@HD" tvg-logo="https://shahid.mbc.net/mediaObject/c2b6a882-458b-446e-b0fe-f97f7992149a?height=auto&width=144&croppingPoint=&version=1&type=png" group-title="موسيقى",MBC Mood
@@ -725,6 +723,8 @@ https://vmi747311.contaboserver.net/hls/livetv.m3u8
 https://mn-nl.mncdn.com/palabroad/live/playlist.m3u8
 #EXTINF:-1 tvg-id="RonahiTV.sy@SD" tvg-logo="https://i.imgur.com/JSvJpD8.png" group-title="منوعات",Ronahi TV
 https://hlspackager.akamaized.net/live/DB/RONAHI_TV/HLS/RONAHI_TV.m3u8
+#EXTINF:-1 tvg-id="SamarraTV.iq@SD" tvg-logo="https://i.imgur.com/7uQoIXi.png" group-title="منوعات",Samarra TV
+https://live.samarra.tv/samarra/ngrp:live_abr/playlist.m3u8
 #EXTINF:-1 tvg-id="SensesTV.lb@SD" tvg-logo="https://i.imgur.com/hnTx8eK.png" group-title="منوعات",Senses TV
 http://31.14.41.69:8080/hls/sensesonline/index.m3u8
 #EXTINF:-1 tvg-id="AlIraqiaKurdish.iq@HD" tvg-logo="https://gateway.esite-lab.com/file-storage/api/v1/public/uploads/2025/3/8/7a8a2548d8e5850e87066d2e573796189.png" group-title="منوعات",Al Iraqia Kurdish
@@ -735,6 +735,8 @@ http://hlspackager.akamaized.net/live/DB/AVA_TV/HLS/AVA_TV-avc1_2500000=10002,mp
 https://avr.host247.net/live/AvarTv/playlist.m3u8
 #EXTINF:-1 tvg-id="KurdChannel.iq@SD" tvg-logo="https://i.imgur.com/xPwzad9.png" group-title="منوعات",Kurd Channel
 https://kurdchhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="NRTSport.iq@HD" tvg-logo="https://mixmedia.tv/wp-content/uploads/2022/08/nrt-sport.png" group-title="منوعات",NRT Sport
+https://andam.uk/ytlive/nrtsport/index.m3u8
 #EXTINF:-1 tvg-id="WaarTV.iq@SD" tvg-logo="https://i.imgur.com/rK0y02d.png" group-title="منوعات",Waar TV
 https://hlspackager.akamaized.net/live/DB/WAAR_HD/HLS/WAAR_HD.m3u8
 #EXTINF:-1 tvg-id="XUMO_99951517" tvg-logo="https://image.xumo.com/v1/channels/channel/99951517/300x300.webp?type=color_onBlack" group-title="عالمي - أخبار",ABC News Live
